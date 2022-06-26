@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+/*                                                  front -mages                                    */
+
+
+
+.fornt1{
+    background-image: linear-gradient(rgba(243, 127, 127, 0.4),var(--flip-color)),url(../ASSET/images/hassan/IMG_20190424_112643.jpg);
+}
+.fornt2{
+    background-image: linear-gradient(rgba(243, 127, 127, 0.4),var(--flip-color)),url(../ASSET/images/hassan/IMG_20190525_160959.jpg);
+}
+.fornt3{
+    background-image: linear-gradient(rgba(243, 127, 127, 0.4),var(--flip-color)),url(../ASSET/images/hassan/mdEzazulHassan\ \ \(6\).jpg);
+}
+.fornt4{
+    background-image: linear-gradient(rgba(243, 127, 127, 0.4),var(--flip-color)),url(../ASSET/images/hassan/mdEzazulHassan\ \ \(8\).jpg);
+}
+
+
+
+
+
+
+video{
+    width: 100%;
+    padding: 1em;
+}
+
+audio{
+    padding: .5em 1em;
+}
+
+
+
+
+
+
+

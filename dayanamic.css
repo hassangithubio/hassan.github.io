@@ -1,0 +1,417 @@
+
+/* @import url("../ASSET/"); */
+
+
+
+:root{
+    --primary-color:rgb(35, 67, 253);
+    --primary-color2:rgb(59, 183, 250);
+    --secondary-color:rgb(249, 46, 46);
+    --flip-color:rgba(185, 41, 252, 0.559);
+    --text-color:rgb(255, 255, 255);
+    --shadow-color:rgb(124, 3, 3);
+    --pragraph-color:rgb(254, 254, 254);
+    animation: dynamic-change 250s infinite;
+
+}
+
+
+@keyframes dynamic-change{
+    0%{
+    --primary-color:rgb(69, 198, 253);
+    --primary-color2:rgb(254, 154, 154);
+    --secondary-color:rgb(251, 70, 70);
+    --flip-color:rgb(218, 60, 60);
+    }
+    20%{
+        --primary-color:rgb(0, 179, 255);
+        --primary-color2:rgb(253, 93, 93);
+        --secondary-color:rgb(253, 33, 33);
+        --flip-color:rgb(255, 55, 55);
+    }
+    50%{
+        --primary-color:rgb(0, 26, 255);
+        --primary-color2:rgb(255, 204, 1);
+        --secondary-color:rgb(253, 33, 33);
+        --flip-color:rgb(255, 55, 55);
+    }
+    80%{
+        --primary-color:rgb(242, 0, 255);
+        --primary-color2:rgb(2, 221, 237);
+        --secondary-color:rgb(33, 176, 253);
+        --flip-color:rgb(98, 55, 255);
+    }
+    100%{
+        --primary-color:rgb(242, 0, 255);
+        --primary-color2:rgb(255, 5, 242);
+        --secondary-color:rgb(149, 0, 255);
+        --flip-color:rgb(202, 10, 183);
+    }
+    
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    perspective: 1080px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: capitalize;
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    outline: none;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    line-height: 100%;
+    scroll-behavior: smooth;
+}
+
+
+
+
+body{
+    background: linear-gradient(260deg,var(--secondary-color),var(--primary-color));
+}
+
+
+/* iframe{
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+} */
+
+
+li,
+::placeholder,
+input,
+button,
+textarea,
+p{
+    padding: 1.4em;
+}
+h2,
+h3,
+h4,
+h5{
+    padding: 1.5em;
+}
+h1{
+    padding: 1em 0;
+}
+.title{
+    color: var(--text-color);
+    text-transform: uppercase;
+    padding: 0em .4em;
+    font-size: 1.8em;
+    letter-spacing: .1em;
+    line-height: 2em;
+
+}
+.logo img{
+    transform: scale(1.5);
+}
+.link-img:hover,
+.active:hover,
+button:hover,
+input:hover,
+img:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+}
+.link-img:active,
+.active:active,
+button:active,
+input:active,
+img:active{
+    cursor: pointer;
+    transform: scale(.5);
+}
+button,.active{
+    box-shadow: 0 0 5px var(--shadow-color);
+}
+button:hover{
+    box-shadow: 0 0 5px 1px var(--shadow-color);
+}
+.blur{
+    background: rgba(160, 160, 160, 0.507);
+    backdrop-filter: blur(30px);
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+/* .dot{
+    border-right: .5em dashed var(--secondary-color);
+} */
+
+h1,
+h2,
+h3,
+button,
+h5,
+li,
+p,
+.nav li a{
+    text-transform: uppercase;
+    color:var(--text-color)
+}
+h2,h5,
+.logo{
+    font-weight: bold;
+}
+h1{
+    font-size: 3em;
+    line-height: 1.5;
+    letter-spacing: .1em;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+button,
+.active{
+    background: var(--secondary-color);
+    border-radius: .5em;
+}
+img{
+    border-radius: 50%;
+}
+button{
+    font-size: 1em;
+}
+.first-section{
+    width: 100vw;
+    height: 75vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.second-section,.third-section{
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+}
+
+
+/* 
+.logo img,
+.logo h5,
+.nav li,
+.nav li a,
+.nav .link-img,
+span,
+button,
+.active,
+.second-section:nth-child(),
+.social-icon,
+h1{
+    flex-grow: 1.2;
+} */
+
+
+.people img{
+    position: absolute;
+    top: -5px;
+    right: -15px;
+    width: 60px;
+    height: 60px;
+    border:.2em solid var(--primary-color2);
+}
+li{
+    list-style: none;
+}
+#active,
+.nav li:hover{
+    border-top: 4px solid var(--secondary-color);
+    cursor: pointer;
+}
+.navbar{
+    overflow: hidden;
+}
+#active a,
+.nav li:hover a{
+    color:var(--secondary-color);
+    cursor: pointer;
+}
+#active a{
+    font-weight: 600;
+}
+.main-body{
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+.link-img{
+    width: 20px;
+    height: 20px;
+}
+.active{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+.third-section li{
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+.flip-content-box{
+    justify-content: center;
+    align-items: stretch;
+}
+.flip-content-box button{
+    padding: 1em;
+    box-shadow: none;
+}
+.card-flip{
+    padding: 4em;
+    overflow: hidden;
+    perspective: 1000px;
+}
+.card-box{
+    width: 300px;
+    height: 360px;
+    position: relative;
+}
+.card-box:hover{
+    transform: rotateX(-180deg);
+}
+.card-box:hover .button3d{
+    transform: translateY(280px);
+}
+.card{
+    width: 100%;
+    height: 100%;
+    height: 360px;
+    border-radius: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.card-back{
+    background: linear-gradient(var(--primary-color2),var(--secondary-color));
+    transform: rotateX(180deg);
+}
+.social-icon img{
+    margin: .5em;
+}
+
+
+
+
+.fornt1{
+    background-image: linear-gradient(rgba(243, 127, 127, 0.4),var(--flip-color)),url(../ASSET/images/momdad.jpg);
+}
+.fornt12{
+    background-image: linear-gradient(rgba(243, 127, 127, 0.4),var(--flip-color)),url(../ASSET/images/hassan/mdEzazulHassan\ \ \(7\).jpg);
+}
+
+
+
+
+p{
+    border-bottom: 2px solid var(--pragraph-color);
+    margin: 1em;
+}
+.second-section{
+    background: var(--primary-color2);
+}
+.serch{
+    border-radius: .5em;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.54);
+    padding: 1.5em;
+    width: 50vw;
+}
+.bell::after{
+    content:'2';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 12px;
+    background: rgb(255,0,0);
+    color: #fff;
+}
+
+
+
+.footer::after{
+    content: "biswas org copyright © md ezazul hassan 2022";
+    position: absolute;
+    top: -60px;
+    padding: 1em;
+    color: var(--secondary-color);
+    font-size: 1em;
+}
+
+
+
+
+@media screen and (max-width:680px){
+    .nav li:last-child{
+        display:none;
+    }
+    .serch,
+    button{
+        font-size: .8em;
+        padding: 1.5em;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    .first-section{
+        height: 40vh;
+    }
+    .second-section, .third-section{
+        height: 40vh;
+    }
+    
+    .flip-content-box button{
+        padding: 1.5em;
+    }
+}
